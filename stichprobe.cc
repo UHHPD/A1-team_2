@@ -24,8 +24,6 @@ int main()
   }
   varianz = varianz/234;
   gin.close();
-  std::cout << mittelwert << std::endl;
-  std::cout << varianz << std::endl;
   std::cout << sqrt(varianz) << std::endl;
   
 }
