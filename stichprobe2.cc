@@ -30,7 +30,7 @@ void stichprobe()
 
 int main()
 {
-  stichprobe();
+  //stichprobe();
   int a;
   double mittelwert;
   double summe = 0;
