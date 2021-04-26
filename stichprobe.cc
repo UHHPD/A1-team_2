@@ -4,9 +4,9 @@
 
 int main()
 {
-  double a, mittelwert;
-  double summe = 0;
-  double varianz = 0;
+  float a, mittelwert;
+  float summe = 0;
+  float varianz = 0;
 
   std::ifstream fin("datensumme.txt");
   for (int i=0; i<= 234; ++i)
