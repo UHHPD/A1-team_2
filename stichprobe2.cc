@@ -33,7 +33,7 @@ void mittelwerte()
   std::ifstream jin("varianzen.txt");
   double MMW = 0; 
   double MV = 0;
-  double b;
+  double b, c;
 
   for(int i=0; i<26; ++i)
   {
@@ -42,13 +42,16 @@ void mittelwerte()
   }
   MMW /= 26;
   std::cout << MMW << std::endl;
+  
   for(int j=0; j<26; ++j)
   {
-    hin >> b;
-    MV += b;
+    jin >> c;
+    MV += c;
   }
   MV /= 26;
   std::cout << MV << std::endl;
+  jin.close();
+  hin.close();
 }
 
 int main()
