@@ -58,5 +58,6 @@ int main()
     varianz /= 9; 
     fout << mittelwert << std::endl;
     gout << varianz << std::endl;
+    varianz = 0;
   }
 }
