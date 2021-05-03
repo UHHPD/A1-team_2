@@ -27,6 +27,29 @@ void stichprobe()
   gin.close();
   std::cout << sqrt(varianz) << std::endl;
 }
+void mittelwerte()
+{
+  std::ifstream hin("mittelwerte.txt");
+  std::ifstream jin("varianzen.txt");
+  double MMW = 0; 
+  double MV = 0;
+  double b;
+
+  for(int i=0; i<26; ++i)
+  {
+    hin >> b;
+    MMW += b;
+  }
+  MMW /= 26;
+  std::cout << MMW << std::endl;
+  for(int j=0; j<26; ++j)
+  {
+    hin >> b;
+    MV += b;
+  }
+  MV /= 26;
+  std::cout << MV << std::endl;
+}
 
 int main()
 {
@@ -59,5 +82,7 @@ int main()
     fout << mittelwert << std::endl;
     gout << varianz << std::endl;
     varianz = 0;
+
   }
+  mittelwerte();
 }
